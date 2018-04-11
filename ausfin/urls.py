@@ -18,10 +18,10 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
 
-from .balance.views import BalanceEventViewSet
+from .balance.views import BalanceUpdateViewSet
 
 router = routers.DefaultRouter()
-router.register(r'balance-event', BalanceEventViewSet)
+router.register(r'balance-update', BalanceUpdateViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
