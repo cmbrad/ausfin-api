@@ -1,5 +1,5 @@
 pipeline {
-    agent none
+    agent { label 'python-36-generic' }
 
     stages {
         stage('test') {
